@@ -72,7 +72,7 @@ dependencies {
     // Retrofit
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
-    
+
     //Moshi
     implementation("com.squareup.moshi:moshi:1.15.0")
 
@@ -84,5 +84,8 @@ dependencies {
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+
+    //Glide
+    implementation ("com.github.bumptech.glide:compose:1.0.0-beta01")
 
 }
