@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("com.google.devtools.ksp").version("1.6.10-1.0.4") // Or latest version of KSP
 }
 
 android {
@@ -66,4 +68,21 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    
+    //Moshi
+    implementation("com.squareup.moshi:moshi:1.15.0")
+
+    // Kapt
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
+
+    // Ksp
+    ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+
 }
